@@ -1,0 +1,36 @@
+<h1>Login Page</h1>
+<h3 style="color: orangered">
+    <% if(locals.message) { %> <%= message %> <% } %>
+</h3>
+
+<form action="/login" method="POST">
+    <div>
+        <label for="usernameEmail">Username or Email:</label><br />
+        <input
+            type="text"
+            name="usernameEmail"
+            id="usernameEmail"
+            placeholder="Username or Email Address"
+        />
+    </div>
+    <br />
+
+    <div>
+        <label for="password">Password:</label><br />
+        <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+        />
+    </div>
+    <br />
+
+    <div>
+        <button>Login</button>
+    </div>
+</form>
+
+<div>
+    <a href="/register">Register</a>
+</div>

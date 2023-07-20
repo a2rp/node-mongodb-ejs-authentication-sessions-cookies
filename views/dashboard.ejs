@@ -1,0 +1,6 @@
+dashboard
+<h1>Welcome <% if(locals.message) { %> <%= message %> <% } %></h1>
+
+<form action="/logout" method="POST">
+    <button>Log out</button>
+</form>

@@ -1,0 +1,11 @@
+
+### a2rp
+GET http://localhost:1198/a2rp
+
+### root
+GET http://localhost:1198
+
+
+
+
+
