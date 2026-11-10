@@ -1,24 +1,36 @@
 {
-    "name": "nodejs-authentication-sessions-cokkies",
+    "name": "node-mongodb-ejs-authentication-sessions-cookies",
     "version": "1.0.0",
-    "description": "",
+    "description": "Learning demo for MongoDB-backed Express sessions, bcrypt authentication, and EJS views.",
     "main": "index.js",
     "scripts": {
-        "devStart": "nodemon ./index.js"
+        "start": "node ./index.js",
+        "dev": "node --watch ./index.js"
     },
-    "keywords": [],
+    "keywords": [
+        "nodejs",
+        "express",
+        "express-session",
+        "mongodb",
+        "mongoose",
+        "ejs",
+        "bcrypt",
+        "authentication",
+        "session-cookies"
+    ],
     "author": "",
     "license": "ISC",
-    "dependencies": {
-        "bcrypt": "^5.1.0",
-        "connect-mongodb-session": "^3.1.1",
-        "ejs": "^3.1.9",
-        "express": "^4.18.2",
-        "express-session": "^1.17.3",
-        "mongoose": "^7.4.0"
+    "engines": {
+        "node": ">=22"
     },
-    "devDependencies": {
-        "dotenv": "^16.3.1",
-        "nodemon": "^3.0.1"
+    "dependencies": {
+        "bcrypt": "^6.0.0",
+        "connect-mongodb-session": "^5.0.0",
+        "dotenv": "^18.0.10",
+        "ejs": "^3.1.10",
+        "express": "^4.22.3",
+        "express-rate-limit": "^8.7.4",
+        "express-session": "^1.19.0",
+        "mongoose": "^9.12.1"
     }
 }

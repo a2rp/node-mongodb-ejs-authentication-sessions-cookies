@@ -1,6 +1,15 @@
-dashboard
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard</title>
+</head>
+<body>
 <h1>Welcome <% if(locals.message) { %> <%= message %> <% } %></h1>
 
 <form action="/logout" method="POST">
     <button>Log out</button>
 </form>
+</body>
+</html>

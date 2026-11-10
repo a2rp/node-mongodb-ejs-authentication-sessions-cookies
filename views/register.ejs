@@ -1,4 +1,12 @@
-<h1>Register Page</h1>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Create an account</title>
+</head>
+<body>
+<h1>Create an account</h1>
 
 <h3 style="color: orangered">
     <% if(locals.message) { %> <%= message %> <% } %>
@@ -12,6 +20,11 @@
             name="username"
             id="username"
             placeholder="Username"
+            autocomplete="username"
+            minlength="3"
+            maxlength="32"
+            pattern="[A-Za-z0-9][A-Za-z0-9._-]{2,31}"
+            required
         />
     </div>
     <br />
@@ -23,6 +36,9 @@
             name="email"
             id="email"
             placeholder="Email Address"
+            autocomplete="email"
+            maxlength="254"
+            required
         />
     </div>
     <br />
@@ -34,6 +50,10 @@
             name="password"
             id="password"
             placeholder="Password"
+            autocomplete="new-password"
+            minlength="8"
+            maxlength="72"
+            required
         />
     </div>
     <br />
@@ -47,3 +67,5 @@
 <div>
     <a href="/login">Login</a>
 </div>
+</body>
+</html>
